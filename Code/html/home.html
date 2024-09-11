@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <title>Home | Amrita DormDash</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" type="image/png" href="../../Assets/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="home">
+        <h1>
+            Amrita DormDash
+        </h1>
+    </div>
+
+
+
+    <div class="header">
+
+        <div class="logo">
+            <a href="home.html">
+                <img src="../../Assets/logo_light.png" alt="AmritaDormDashLogo" >
+            </a>
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button>
+                <img src="../../Assets/search_icon.png" alt="SearchIcon">
+            </button>
+        </div>
+
+        <div class="cart_logout">
+            <div class="cart">
+                <a href="cart.html">
+                    <button>
+                        <img src="../../Assets/cart_icon_light.png" alt="Cart icon">
+                    </button>
+                </a>
+            </div>
+    
+            <div class="profile_icon">
+                <a href="login.html">
+                    <button>
+                        <img src="../../Assets/logout_icon_light.png" alt="Profile icon" id = "logout">
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="text_outlet">
+        <h1>
+            Select an Outlet
+        </h1>
+    </div>
+
+    <div class="outlets_list">
+
+        <div class="outlet" id="main_canteen">
+            <a href="products.html" onclick="changeStore('main')">
+                <div class="name_card">
+                    <span class="out_name">Main Canteen</span>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="outlet" id="mba_canteen">
+            <a href="products.html" onclick="changeStore('mba')">
+                <div class="name_card">
+                    <span class="out_name">MBA Canteen</span>
+                </div>
+                
+            </a>
+        </div>
+        
+        <div class="outlet" id="it_canteen">
+            <a href="products.html" onclick="changeStore('it')">
+                <div class="name_card">
+                    <span class="out_name">IT Canteen</span>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="outlet" id="groc_store">
+            <a href="products.html" onclick="changeStore('groc')">
+                <div class="name_card">
+                    <span class="out_name">Grocery Store</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="outlet" id="prov_store">
+            <a href="products.html" onclick="changeStore('prov')">
+                <div class="name_card">
+                    <span class="out_name">Provisional Store</span>
+                </div>
+            </a>        
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer_text">
+            <div class="navbar">
+                <a href="../html/home.html" target="_blank">HOME</a>
+                <a href="../html/products.html" target="_blank">PRODUCT</a>
+                <a href="../html/cart.html" target="_blank">CART</a>
+                <a href="../html/payment.html" target="_blank">PAYMENT</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 Amrita DormDash <br>All Rights Reserved</dr>
+        </div>
+    </div>
+
+    <script src="../js/home.js"></script>
+
+</body>

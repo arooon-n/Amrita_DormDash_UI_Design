@@ -1,0 +1,276 @@
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+
+/* --------------------------------- */
+
+body{
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0;
+}
+
+.header{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0, .2);
+    z-index: 1;
+}
+
+.header .logo a img{
+    margin-left: 15px;
+    height: 50px;
+    padding-top: 15px;
+    float: left;
+}
+
+.header .searchbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 40vw;
+    margin: 15px;
+    float: left;
+    background-color:#ede9e9;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+.header .searchbar input{
+    background-color: transparent;
+    margin: 15px;
+    height: 15px;
+    width: 35vw;
+    border: none;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    float: left;
+}
+
+.header .searchbar input:focus {
+    outline: none;
+}
+
+.header .searchbar button{
+    background-color: transparent;
+    height: 50px;
+    float: right;
+    border: none;
+    margin-right: 10px;
+}
+
+.header .searchbar button img{
+
+    height: 35px;
+    float: left;
+}
+
+.header .cart a button{
+    height: 50px;
+
+
+    background-color: transparent;
+    border: none;
+}
+
+.header .cart a button img {
+    height: 30px;
+}
+
+
+.header .profile_icon a{
+    text-decoration: none;
+}
+
+.header .profile_icon a button{
+
+
+    background-color: transparent;
+    border: none;
+  
+}
+
+#logout{
+    margin-top: 7px;
+    margin-left: 20px;
+    height: 30px;
+}
+
+.header .profile_icon a button img{
+    height: 50px;
+}
+
+.cart_logout{
+    margin: 15px;
+    display: flex;
+
+}
+
+/* ----------------------------- */
+
+#back{
+    margin-top: 115px;
+    margin-left: 15px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    position: fixed;
+}
+
+.store_name{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 175px;
+    background-color: #BF1B4C;
+    position: fixed;
+}
+
+.add{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'ubuntu';
+    color: #BF1B4C;
+    display: flex;
+    flex-direction: column;
+}
+
+#store_type{
+    font-family: 'ubuntu';
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+
+.outlet_image{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-top: 200px;
+    width: 25%;
+    height: calc(100vh - 230px);
+    background-color: white;
+    box-shadow: 1px 5px 5px 5px rgba(0,0,0, .4);
+    position: fixed;
+    border-radius: 5px;
+}
+
+.outlet_image img{
+    width: 100%;
+    height: 25vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.outlets_list{
+    margin-top: 200px;
+    width: 65%;
+    float: left;
+    margin-left: 32%;
+}
+
+
+.product_card{
+    background-color: white;
+    width: 280px;
+    height: 425px;
+    float: left;
+    margin: 0px 15px 30px 15px;
+    box-shadow: 1px 5px 5px 5px rgba(0,0,0,.2);
+    border-radius: 5px;
+    border-bottom: 10px solid #BF1B4C;
+
+}
+
+.product_card a {
+    text-decoration: none;
+    font-family: 'ubuntu';
+    color: #BF1B4C;
+}
+
+.product_card a img{
+    width: 280px;
+    height: 280px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.prod_det{
+    padding: 10px;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.prod_name{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.prod_rating{
+    font-size: 15px;
+}
+
+.price{
+    font-size: 25px;
+}

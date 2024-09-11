@@ -1,0 +1,355 @@
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+
+/* --------------------------------- */
+
+body{
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../Assets/home2.jpg");
+    background-color: hsla(0, 0%, 0%, 0.7);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.home h1{
+    margin-top: 40vh;
+    font-size: 150px;
+    font-family: 'ubuntu';
+    color: rgba(255,255,255, .4);
+    
+}
+
+
+
+.header{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0, .2);
+    z-index: 1;
+    transition:background-color 0.3s ease, top 0.3s ease;
+}
+
+.header.active{
+    background-color: #ffffff;
+}
+
+
+.header .logo a img{
+    margin-left: 15px;
+    height: 50px;
+    padding-top: 15px;
+    float: left;
+}
+
+.header .searchbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 40vw;
+    margin: 15px;
+    float: left;
+    background-color: rgba(255,255,255, .4);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.header .searchbar.active{
+    background-color:#ede9e9;
+}
+
+
+
+.header .searchbar input{
+    background-color: transparent;
+    margin: 15px;
+    height: 15px;
+    width: 35vw;
+    border: none;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    float: left;
+}
+
+.header .searchbar input:focus {
+    outline: none;
+}
+
+.header .searchbar button{
+    background-color: transparent;
+    height: 50px;
+    float: right;
+    border: none;
+    margin-right: 10px;
+}
+
+.header .searchbar button img{
+
+    height: 35px;
+    float: left;
+}
+
+.header .cart a button{
+    height: 50px;
+
+
+    background-color: transparent;
+    border: none;
+}
+
+.header .cart a button img {
+    height: 30px;
+}
+
+
+.header .profile_icon a{
+    text-decoration: none;
+}
+
+.header .profile_icon a button{
+
+
+    background-color: transparent;
+    border: none;
+  
+}
+
+#logout{
+    margin-top: 7px;
+    margin-left: 20px;
+    height: 30px;
+}
+
+.header .profile_icon a button img{
+    height: 50px;
+}
+
+.cart_logout{
+    margin: 15px;
+    display: flex;
+
+}
+
+/*---------------------------*/
+
+.outlets_list::-webkit-scrollbar-track {
+    background: transparent;
+}
+.outlets_list::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #BF1B4C; 
+}
+.outlets_list::-webkit-scrollbar-thumb:hover {
+    background: #BF1B4C;
+}
+
+.text_outlet{
+    display: flex;
+    justify-content: center;
+    height: 175px;
+}
+
+.text_outlet h1{
+    font-family: 'ubuntu';
+    color: #BF1B4C;
+    font-size: 75px;
+    margin-top: 150px;
+}
+ 
+
+.outlets_list {
+    display: flex;
+    width: 75%;
+    height: 350px;
+    margin-left: 12.5%;
+    background-color: transparent;
+    transform: translate(0%, 30%);
+    overflow-x: scroll; 
+}
+
+
+.outlets_list::-webkit-scrollbar {
+    background-color: white;
+    color: #BF1B4C;
+}
+
+.outlet > a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.outlet {
+    background-color: #BBB3A5;
+    height: 100%;
+    width: 350px;
+    margin-right: 30px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.out_name {
+    font-size: 30px;
+    font-family: 'ubuntu';
+    color: #BF1B4C;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+
+
+#main_canteen{
+    background-image: url("../../Assets/main_canteen.png");
+    background-size: cover;
+}
+#it_canteen{
+    background-image: url("../../Assets/it_canteen.png");
+    background-size: cover;
+}
+#mba_canteen{
+    background-image: url("../../Assets/mba_canteen.png");
+    background-size: cover;
+}
+#groc_store{
+    background-image: url("../../Assets/groc_store.png");
+    background-size: cover;
+}
+#prov_store{
+    background-image: url("../../Assets/dept_store.png");
+    background-size: cover;
+}
+
+
+.name_card{
+    width: 300px;
+    height: 50px;
+    margin-top: 275px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    /* display:flex; */
+    margin-top: 50vh;
+    float: left;
+    width:100%;
+    height: 20vh;
+    bottom: 0;
+    background-color: #BF1B4C;
+    text-align: center;
+    font-family: 'ubuntu';
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'ubuntu';
+}
+
+
+
+
+.navbar a {
+    margin: 8px 0;
+    padding: 15px 20px; 
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #BF1B4C;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; 
+    box-sizing: border-box; 
+    transition: all 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #fff; 
+    border: 2px solid #BF1B4C;
+    color: #BF1B4C;
+}
+
+.copyright {
+    font-size: 15px;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    color: #fff;
+}
